@@ -1,0 +1,14 @@
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.rating > .filled{
+    font-size: 20px;
+    color: orange;
+}
+
+.rating > span{
+    margin-left: 5px;
+}
+

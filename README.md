@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Opencart App
+
+ ECommerce app built with react, redux, materialize-css and PayPal integration for handling payments.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,0 +1,71 @@
+.login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+   position: relative;
+   margin-top: 40px;
+   padding: 20px 30px;
+   box-shadow: 0 1px 1px 1px rgb(180, 180, 180);
+   height: 420px;
+   width: 300px;
+}
+
+.login-form > h5{
+    text-align: center;
+    margin-bottom: 28px;
+    font-family:cursive;
+}
+
+.login-form > h5 > img{
+    height: 30px;
+    width: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > div:nth-of-type(2){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.visible{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+    top: 12px;
+    right: 5px;
+}
+
+.visible-on{
+    color: blue;
+}
+
+.forgot-pwd{
+    margin-left: auto;
+}
+
+.login-btn{
+    margin-top: 15px;
+}
+
+.register{
+    margin-top: 17px;
+    font-size: 17px;
+    text-align: center;
+}
+
+@media only screen and (max-width:365px) {
+    .login-form{
+        width: 250px;
+    }
+}

@@ -1,0 +1,150 @@
+.my-orders-con{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.my-orders-list{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 1px 1px rgb(180, 180, 180);
+    height: fit-content;
+    width: 95%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    border-radius: 7px;
+}
+
+.my-orders-title{
+    margin: 0px 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.my-orders-list-empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    height: 400px;
+}
+
+.my-orders-list-empty > img{
+    height: 200px;
+    width: 250px;
+}
+
+.my-orders-list-empty > p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.my-orders-list-empty > button{
+    margin-top: 20px;
+}
+
+.my-orders-list-body{
+    height: fit-content;
+    margin: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.my-orders-list-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 1px 1px rgb(180, 180, 180);
+    padding: 10px 20px 2px 20px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.my-orders-list-item:hover{
+    box-shadow: 0 1px 1px 1px rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+.my-orders-list-item > img{
+    height: 80px;
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.item-title{
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.item-price{
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.item-payment-method {
+    color: black;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.item-payment-method  > i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 7px;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+.item-payment-method > i > img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.item-status{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    align-items: flex-start;
+}
+
+.item-payment{
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.item-payment > p:nth-of-type(1){
+    margin-right: 10px;
+}
+
+.item-delivery{
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+}
+
+.item-delivery > p:nth-of-type(1){
+    margin-right: 10px;
+}

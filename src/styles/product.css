@@ -1,0 +1,35 @@
+.prod{
+    margin: 0px 10px 18px 10px;
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: 0px 3px 3px 3px whitesmoke;
+    border-bottom: 2px solid white;
+}
+
+.prod:hover{
+    border-bottom: 2px solid blueviolet;
+}
+
+.prod > a > img{
+    height: 300px;
+    width: 300px;
+}
+
+.prod-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prod-body > a > h6{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.prod-body > h6{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 6px;
+}

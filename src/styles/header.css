@@ -1,0 +1,119 @@
+header{
+    margin-bottom: 30px;
+}
+
+.nav{
+    padding: 0px 100px;
+}
+
+.nav > a > img{
+    height: 28px;
+    width: 28px;
+}
+
+.user-btn{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.user-info{
+    z-index: 5 !important;
+    padding: 15px 10px;
+    width: 200px !important;
+    top: 58px !important;
+    left: auto !important;
+    right: 5px !important;
+    border-radius: 5px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: fit-content;
+}
+
+.user-info > p{
+    color: black;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.user-info > p:nth-of-type(2){
+    color: rgb(133, 133, 133);
+}
+
+.user-info > button{
+    margin-top: 10px;
+}
+
+.cart{
+    margin-top: 0px !important;
+    position: relative;
+}
+
+.cart-item-count{
+    padding: 10px 6px;
+    border-radius: 50%;
+    background-color: chocolate;
+    position: absolute;
+    line-height: 0px;
+    font-size: 15px;
+    top: 10px;
+    left: 4px
+}
+
+.cart > a{
+    display: flex;
+}
+
+.my-orders{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.my-orders > i{
+    margin-right: 6px;
+    color: blueviolet;
+    height: 0px !important;
+    line-height: 0px !important;
+}
+
+.sidenav-cart{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.sidenav-cart > a{
+    display: flex;
+}
+
+.sidenav-cart > a> p{
+    padding: 10px 6px;
+    border-radius: 50%;
+    background-color: chocolate;
+    position: absolute;
+    line-height: 0px;
+    font-size: 12px;
+    top: -8px;
+    right: -15px;
+    color: white;
+}
+
+.btn-login{
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 0 30px 0 30px;
+}
+
+.sidenav{
+    width: max-content;
+}
+
+@media only screen and (max-width:992px){
+    .nav{
+        padding: 0px 5px !important;
+    }
+}

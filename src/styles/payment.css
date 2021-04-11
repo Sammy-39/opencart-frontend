@@ -1,0 +1,75 @@
+.payment{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 1px 1px rgb(180, 180, 180);
+    height: max-content;
+    width: 50%;
+    padding-bottom: 30px;
+    border-radius: 7px;
+}
+
+.payment-title{
+    margin: 0px 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.payment-form > form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-form-body{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.payment-form-body > label > span{
+    color: black;
+    font-size: 17px !important;
+}
+
+.payment-form-body > button{
+    margin-top: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:950px) {
+    .payment-form{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .payment-form{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .payment-form{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:334px) {
+    .payment{
+        margin-top: 60px;
+    }
+}
