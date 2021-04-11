@@ -1,6 +1,9 @@
 # Opencart App
 
- ECommerce app built with react, redux, materialize-css and PayPal integration for handling payments.
+ E-Commerce app built with react, redux, materialize-css and PayPal integration for handling payments.
+ 
+ Backend repo - https://github.com/Sammy-39/opencart-backend
+ Backend link - https://opencart-backend.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
