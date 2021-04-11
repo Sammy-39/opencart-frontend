@@ -7,7 +7,7 @@ import App from './App';
 import store from './store/store'
 import './index.css';
 
-axios.defaults.baseURL = 'http://localhost:5000/api'
+axios.defaults.baseURL = 'https://opencart-backend.herokuapp.com/api'
 axios.defaults.withCredentials = true
 
 ReactDOM.render(
