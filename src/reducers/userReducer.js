@@ -28,3 +28,33 @@ export const Register = (state={loading: false}, action) =>{
             return state
     }
 }
+
+export const ForgotPassword = (state={loading: false}, action) =>{
+    switch(action.type){
+        case 'FORGOT_PASSWORD_REQUEST':
+            return { loading: true }
+        case 'FORGOT_PASSWORD_SUCCESS':
+            return { loading: false, message: action.payload }
+        case 'FORGOT_PASSWORD_ERROR':
+            return { loading: false, error: action.payload }
+        case 'FORGOT_PASSWORD_RESET':
+            return { loading: false }
+        default:
+            return state
+    }
+}
+
+export const ResetPassword = (state={loading: false}, action) =>{
+    switch(action.type){
+        case 'RESET_PASSWORD_REQUEST':
+            return { loading: true }
+        case 'RESET_PASSWORD_SUCCESS':
+            return { loading: false, message: action.payload }
+        case 'RESET_PASSWORD_ERROR':
+            return { loading: false, error: action.payload }
+        case 'RESET_PASSWORD_RESET':
+            return { loading: false }
+        default:
+            return state
+    }
+}

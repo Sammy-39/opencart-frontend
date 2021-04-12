@@ -56,3 +56,53 @@ export const register = (name,email,password) => async (dispatch) =>{
         })
     }
 } 
+
+export const forgotPassword = (email) => async (dispatch) =>{
+    try{
+        dispatch({type: "FORGOT_PASSWORD_REQUEST"})
+
+        const config = {
+            headers :{ "Content-Type": "application/json" }
+        }
+        const { data } = await axios.post('/forgot-password', { email }, config)
+
+        dispatch({
+            type: "FORGOT_PASSWORD_SUCCESS",
+            payload: data.message
+        })
+    }
+    catch(err){
+        const errMsg = err.response && err.response.data.message ?
+        err.response.status===500 ? 'Connection Timeout!!' :
+        err.response.data.message : err.response
+        dispatch({
+            type: 'FORGOT_PASSWORD_ERROR', 
+            payload: errMsg
+        })
+    }
+} 
+
+export const resetPassword = (email, password, resetPasswordOTP) => async (dispatch) =>{
+    try{
+        dispatch({type: "RESET_PASSWORD_REQUEST"})
+
+        const config = {
+            headers :{ "Content-Type": "application/json" }
+        }
+        const { data } = await axios.post('/reset-password', { email, password, resetPasswordOTP }, config)
+
+        dispatch({
+            type: "RESET_PASSWORD_SUCCESS",
+            payload: data.message
+        })
+    }
+    catch(err){
+        const errMsg = err.response && err.response.data.message ?
+        err.response.status===500 ? 'Connection Timeout!!' :
+        err.response.data.message : err.response
+        dispatch({
+            type: 'RESET_PASSWORD_ERROR', 
+            payload: errMsg
+        })
+    }
+} 

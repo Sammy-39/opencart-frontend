@@ -75,7 +75,7 @@ const Login = ({ location, history }) =>{
                         <input id="password" type={showPassword ? 'text': 'password'} value={password} 
                         onChange={e=>setPassword(e.target.value)} disabled={disable} required />
                         <label htmlFor="password">Password</label>
-                        <Link className="forgot-pwd" to={disable ? '#' : '/changePassword'}>
+                        <Link className="forgot-pwd" to={disable ? '#' : '/forgot-password'}>
                         Forgot password? </Link>
                     </div>
                     <button className="btn login-btn #6200ea deep-purple accent-4" type="submit"
